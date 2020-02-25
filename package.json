@@ -1,7 +1,7 @@
 {
   "name": "@andreasnicolaou/ngx-copy-to-clipboard",
-  "version": "1.0.0",
-  "description": "Locale Translation",
+  "version": "1.0.1",
+  "description": "Copy to clipboard",
   "peerDependencies": {
     "@angular/common": "^9.0.2",
     "@angular/core": "^9.0.2",
