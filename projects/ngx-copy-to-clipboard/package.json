@@ -1,0 +1,28 @@
+{
+  "name": "@andreasnicolaou/ngx-copy-to-clipboard",
+  "version": "2.0.2",
+  "peerDependencies": {
+    "@angular/common": "^13.2.0",
+    "@angular/core": "^13.2.0",
+    "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreasnicolaou/ngx-copy-to-clipboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andreasnicolaou/ngx-copy-to-clipboard/issues"
+  },
+  "homepage": "https://github.com/andreasnicolaou/ngx-copy-to-clipboard",
+  "license": "MIT",
+  "author": "Andreas Nicolaou",
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@angular/common": "^13.2.0",
+    "@angular/core": "^13.2.0",
+    "tslib": "^2.5.0"
+  }
+}
