@@ -1,11 +1,11 @@
 {
   "name": "@andreasnicolaou/ngx-copy-to-clipboard",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Copy to clipboard",
   "peerDependencies": {
-    "@angular/common": "^9.0.2",
-    "@angular/core": "^9.0.2",
-    "tslib": "^1.10.0"
+    "@angular/common": "^13.2.0",
+    "@angular/core": "^13.2.0",
+    "tslib": "^2.5.0"
   },
   "repository": {
     "type": "git",
@@ -26,8 +26,8 @@
     "e2e": "ng e2e"
   },
   "devDependencies": {
-    "@angular/common": "^9.0.2",
-    "@angular/core": "^9.0.2",
-    "tslib": "^1.10.0"
+    "@angular/common": "^13.2.0",
+    "@angular/core": "^13.2.0",
+    "tslib": "^2.5.0"
   }
 }
