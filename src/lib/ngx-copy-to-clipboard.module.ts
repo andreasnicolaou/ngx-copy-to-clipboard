@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CopyToClipboardDirective } from './ngx-copy-to-clipboard.directive';
+import { NgxCopyToClipboardDirective } from './ngx-copy-to-clipboard.directive';
 
 @NgModule({
-    declarations: [CopyToClipboardDirective],
-    exports: [CopyToClipboardDirective]
+  declarations: [NgxCopyToClipboardDirective],
+  imports: [],
+  exports: [NgxCopyToClipboardDirective],
 })
-export class NgxCopyToClipboardModule { }
+export class NgxCopyToClipboardModule {}

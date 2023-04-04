@@ -1,11 +1,10 @@
 {
   "name": "@andreasnicolaou/ngx-copy-to-clipboard",
-  "version": "2.0.1",
-  "description": "Copy to clipboard",
+  "version": "2.0.2",
   "peerDependencies": {
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0",
-    "tslib": "^2.5.0"
+    "tslib": "^2.3.0"
   },
   "repository": {
     "type": "git",
@@ -17,14 +16,10 @@
   "homepage": "https://github.com/andreasnicolaou/ngx-copy-to-clipboard",
   "license": "MIT",
   "author": "Andreas Nicolaou",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+  "dependencies": {
+    "tslib": "^2.3.0"
   },
+  "sideEffects": false,
   "devDependencies": {
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0",

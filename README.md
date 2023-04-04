@@ -1,4 +1,4 @@
-# ngx-copy-to-clipboard
+# NgxCopyToClipboard
 
 Click and copy to clipboard
 
