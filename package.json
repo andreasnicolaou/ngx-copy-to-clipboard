@@ -1,10 +1,19 @@
 {
   "name": "@andreasnicolaou/ngx-copy-to-clipboard",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "peerDependencies": {
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0"
   },
+  "keywords": [
+    "angular",
+    "ngx",
+    "copy",
+    "text",
+    "content",
+    "clipboard",
+    "andreasnicolaou/ngx-copy-to-clipboard"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/andreasnicolaou/ngx-copy-to-clipboard.git"

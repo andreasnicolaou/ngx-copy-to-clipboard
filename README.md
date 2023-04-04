@@ -10,7 +10,7 @@ Click and copy to your clipboard fast
 
 [![npm](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/@andreasnicolaou/ngx-copy-to-clipboard)
 
-<br><br>
+<br>
 
 ## Installation
 
