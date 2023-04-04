@@ -1,27 +1,70 @@
-# MyWorkspace
+# NgxCopyToClipboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+Click and copy to clipboard
 
-## Development server
+<br><br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+[![npm](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/@andreasnicolaou/ngx-copy-to-clipboard)
+[![npm](https://img.shields.io/npm/dt/andreasnicolaou/ngx-copy-to-clipboard.svg)](https://www.npmjs.com/package/@andreasnicolaou/ngx-copy-to-clipboard)
+[![npm](https://img.shields.io/npm/dm/andreasnicolaou/ngx-copy-to-clipboard.svg)](https://www.npmjs.com/package/@andreasnicolaou/ngx-copy-to-clipboard)
 
-## Code scaffolding
+<br><br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+#### 1. Install via NPM:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```shell
+npm i --save @andreasnicolaou/ngx-copy-to-clipboard
+```
 
-## Running unit tests
+#### 3. Import `NgxCopyToClipboardModule` into your app's root module
+```typescript
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+import { NgxCopyToClipboardModule } from '@andreasnicolaou/ngx-copy-to-clipboard';
 
-## Running end-to-end tests
+@NgModule({
+  ...
+  imports: [
+    NgxCopyToClipboardModule
+  ],
+  ...
+})
+export class AppModule { }
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
 
-## Further help
+<br><br>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+| Inputs                    | Description                                                                         | 
+| ------------------------- | ----------------------------------------------------------------------------------- | 
+| `textToCopy`              | String Text to copy                                                                 | 
+| `successMessage`          | On copy success message                                                             | 
+| `errorMessage`            | On copy error message                                                               | 
+| `onCopyEvent`             | On copy event get success message (has default message-ovverid)                     | 
+| `onErrorEvent`            | On copy event get error message (has default message-ovverid)                       | 
+
+#### Example
+```typescript
+    const val = 'Hello World!';
+
+    public onSuccess(ev: string){
+        console.log(ev);
+    }
+
+     public onError(ev: string){
+        console.log(ev);
+    }
+
+```
+```html
+    <button copyToClipboard [textToCopy]="val" [successMessage]="'Copied to Clipboard'" [errorMessage]="'Not copied to Clipboard'"
+     (onCopyEvent)="onSuccess($event)" (onErrorEvent)="onError($event)">Copy</button>
+```
+
+## Contribution
+- **Having an issue**? or looking for support? [Open an issue](https://github.com/andreasnicolaou/ngx-copy-to-clipboard/issues/new) and we will get you the help you need.
+- Got a **new feature or a bug fix**? Fork the repo, make your changes, and submit a pull request.
+
+## Support this project
+If you find this project useful, please star the repo to let people know that it's reliable. Also, share it with friends and colleagues that might find this useful as well. Thank you :smile:
