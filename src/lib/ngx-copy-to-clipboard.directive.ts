@@ -8,8 +8,7 @@ import {
 })
 
 export class CopyToClipboardDirective {
-    /* tslint:disable:no-input-rename */
-    @Input() public textToCopy: string = null;
+    @Input() public textToCopy = null;
     @Input() public successMessage: string = 'Succesfully copied';
     @Input() public errorMessage: string = 'Could not copy';
     @Output() public onCopyEvent: EventEmitter<string> = new EventEmitter();
