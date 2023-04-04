@@ -1,12 +1,14 @@
 # NgxCopyToClipboard
 
-Click and copy to clipboard
+Click and copy to your clipboard fast
 
-<br><br>
+<br>
+
+## Why is there a need Copy to clipboard?
+
+> The "Copy to clipboard" directive is a useful feature that allows users to quickly and easily duplicate content from one location and paste it into another. It is particularly useful when working with text, as it eliminates the need to manually retype or reformat content.
 
 [![npm](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/@andreasnicolaou/ngx-copy-to-clipboard)
-[![npm](https://img.shields.io/npm/dt/andreasnicolaou/ngx-copy-to-clipboard.svg)](https://www.npmjs.com/package/@andreasnicolaou/ngx-copy-to-clipboard)
-[![npm](https://img.shields.io/npm/dm/andreasnicolaou/ngx-copy-to-clipboard.svg)](https://www.npmjs.com/package/@andreasnicolaou/ngx-copy-to-clipboard)
 
 <br><br>
 
@@ -18,7 +20,7 @@ Click and copy to clipboard
 npm i --save @andreasnicolaou/ngx-copy-to-clipboard
 ```
 
-#### 3. Import `NgxCopyToClipboardModule` into your app's root module
+#### 2. Import `NgxCopyToClipboardModule` into your app's root module or common module
 ```typescript
 
 import { NgxCopyToClipboardModule } from '@andreasnicolaou/ngx-copy-to-clipboard';
@@ -34,7 +36,7 @@ export class AppModule { }
 
 ```
 
-<br><br>
+<br>
 
 | Inputs                    | Description                                                                         | 
 | ------------------------- | ----------------------------------------------------------------------------------- | 
@@ -58,7 +60,7 @@ export class AppModule { }
 
 ```
 ```html
-    <button copyToClipboard [textToCopy]="val" [successMessage]="'Copied to Clipboard'" [errorMessage]="'Not copied to Clipboard'"
+    <button ngxCopyToClipboard [textToCopy]="val" [successMessage]="'Copied to Clipboard'" [errorMessage]="'Not copied to Clipboard'"
      (onCopyEvent)="onSuccess($event)" (onErrorEvent)="onError($event)">Copy</button>
 ```
 
