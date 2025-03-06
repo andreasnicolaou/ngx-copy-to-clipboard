@@ -1,6 +1,5 @@
 import {
   Directive,
-  ElementRef,
   EventEmitter,
   HostListener,
   Input,
@@ -14,10 +13,8 @@ export class NgxCopyToClipboardDirective {
   @Input() public textToCopy: string | null = null; // Explicitly typing as string
   @Input() public successMessage = 'Successfully copied';
   @Input() public errorMessage = 'Could not copy';
-  @Output() public onCopyEvent: EventEmitter<string> = new EventEmitter();
-  @Output() public onErrorEvent: EventEmitter<string> = new EventEmitter();
-
-  constructor(private readonly elementRef: ElementRef) {}
+  @Output() public readonly onCopyEvent: EventEmitter<string> = new EventEmitter();
+  @Output() public readonly onErrorEvent: EventEmitter<string> = new EventEmitter();
 
   @HostListener('click', ['$event'])
   public async onClick(): Promise<void> {
@@ -25,7 +22,6 @@ export class NgxCopyToClipboardDirective {
       this.onErrorEvent.emit(this.errorMessage);
       return;
     }
-
     try {
       await navigator.clipboard.writeText(this.textToCopy); // Using Clipboard API
       this.onCopyEvent.emit(this.successMessage);
