@@ -7,7 +7,7 @@
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/andreasnicolaou/ngx-copy-to-clipboard)
 ![NPM Downloads](https://img.shields.io/npm/dm/%40andreasnicolaou%2Fngx-copy-to-clipboard)
 
-## Why is there a need Copy to clipboard?
+## Why Is Copy to Clipboard Useful?
 
 > The **ngxCopyToClipboard** directive provides a seamless way for users to quickly copy content without the need to manually select or retype it. This is especially useful in forms, code snippets, confirmation flows, and other UI/UX scenarios where content needs to be reused.
 
