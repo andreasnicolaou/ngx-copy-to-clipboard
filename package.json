@@ -1,6 +1,6 @@
 {
   "name": "@andreasnicolaou/ngx-copy-to-clipboard",
-  "version": "3.0.4",
+  "version": "3.1.0",
   "description": "A lightweight, standalone Angular directive for copying text to the clipboard using the Clipboard API.",
   "private": false,
   "publishConfig": {
