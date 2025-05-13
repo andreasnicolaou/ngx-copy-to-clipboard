@@ -13,7 +13,7 @@
 
 ## Installation
 
-#### 1. Install via NPM:
+#### 1. Install via NPM
 
 ```bash
 npm i --save @andreasnicolaou/ngx-copy-to-clipboard
