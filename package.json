@@ -1,19 +1,11 @@
 {
   "name": "@andreasnicolaou/ngx-copy-to-clipboard",
-  "version": "3.0.4",
-  "peerDependencies": {
-    "@angular/common": "^18.2.8",
-    "@angular/core": "^18.2.8"
+  "version": "3.1.0",
+  "description": "A lightweight, standalone Angular directive for copying text to the clipboard using the Clipboard API.",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
   },
-  "keywords": [
-    "angular",
-    "ngx",
-    "copy",
-    "text",
-    "content",
-    "clipboard",
-    "andreasnicolaou/ngx-copy-to-clipboard"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/andreasnicolaou/ngx-copy-to-clipboard.git"
@@ -21,16 +13,32 @@
   "bugs": {
     "url": "https://github.com/andreasnicolaou/ngx-copy-to-clipboard/issues"
   },
-  "homepage": "https://github.com/andreasnicolaou/ngx-copy-to-clipboard",
+  "author": {
+    "name": "Andreas Nicolaou",
+    "email": "anicolaou66@gmail.com",
+    "url": "https://github.com/andreasnicolaou"
+  },
   "license": "MIT",
-  "author": "Andreas Nicolaou",
+  "peerDependencies": {
+    "@angular/common": ">=14.0.0 <20.0.0",
+    "@angular/core": ">=14.0.0 <20.0.0"
+  },
   "dependencies": {
     "tslib": "^2.3.0"
   },
   "sideEffects": false,
-  "devDependencies": {
-    "@angular/common": "^18.2.8",
-    "@angular/core": "^18.2.8",
-    "tslib": "^2.5.0"
-  }
+  "keywords": [
+    "angular",
+    "angular-directive",
+    "clipboard",
+    "copy",
+    "copy-to-clipboard",
+    "ngx",
+    "text",
+    "clipboard-api",
+    "ngx-copy-to-clipboard",
+    "andreasnicolaou",
+    "@andreasnicolaou/ngx-copy-to-clipboard"
+  ],
+  "homepage": "https://github.com/andreasnicolaou/ngx-copy-to-clipboard"
 }
