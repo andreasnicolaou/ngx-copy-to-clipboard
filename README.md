@@ -19,9 +19,11 @@
 npm i --save @andreasnicolaou/ngx-copy-to-clipboard
 ```
 
-#### 2. Import the Directive Based on Your Angular Version
+> Requires Angular 19 – 22. For Angular 14 – 18, use `@andreasnicolaou/ngx-copy-to-clipboard@3.x`.
 
-🟢 **For Angular 15+ (Standalone Projects)**
+#### 2. Import the Directive
+
+🟢 **Standalone components (recommended)**
 
 You can directly import the directive into any standalone component:
 
@@ -37,7 +39,7 @@ import { NgxCopyToClipboardDirective } from '@andreasnicolaou/ngx-copy-to-clipbo
 export class YourComponent {}
 ```
 
-🟠 **For Angular <15 or Module-Based Projects**
+🟠 **NgModule-based projects**
 
 Use the provided NgxCopyToClipboardModule:
 
@@ -52,7 +54,7 @@ import { NgxCopyToClipboardModule } from '@andreasnicolaou/ngx-copy-to-clipboard
 export class YourModule {}
 ```
 
-> 💡 Note: If you're using Angular 15+ but prefer NgModule-based architecture, you can also use the module wrapper for compatibility.
+> 💡 Note: If you prefer an NgModule-based architecture, you can use the module wrapper for compatibility.
 
 ### ✨ **Want to Add Toast Notifications?**
 
@@ -60,9 +62,9 @@ If you’d like to show toasts or notifications when a user copies content, chec
 
 ## API Reference
 
-| Name             | Type                   | Description                                                                    |
-| ---------------- | ---------------------- | ------------------------------------------------------------------------------ |
-| `textToCopy`     | `string`               | Text value to be copied to the clipboard.                                      |
+| Name             | Type                        | Description                                                               |
+| ---------------- | --------------------------- | ------------------------------------------------------------------------- |
+| `textToCopy`     | `string \| null \| undefined` | Text value to be copied. `null`/`undefined` emit `errorMessage` on click. |
 | `successMessage` | `string`               | Optional message emitted on successful copy. Default: `'Successfully copied'`. |
 | `errorMessage`   | `string`               | Optional message emitted on copy failure. Default: `'Could not copy'`.         |
 | `onCopyEvent`    | `EventEmitter<string>` | Emits `successMessage` when copying succeeds.                                  |
