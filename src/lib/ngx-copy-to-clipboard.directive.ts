@@ -5,7 +5,7 @@ import { Directive, EventEmitter, HostListener, Input, Output } from '@angular/c
   selector: '[ngxCopyToClipboard]',
 })
 export class NgxCopyToClipboardDirective {
-  @Input() public textToCopy: string | null = null;
+  @Input() public textToCopy: string | null | undefined = null;
   @Input() public successMessage = 'Successfully copied';
   @Input() public errorMessage = 'Could not copy';
 
